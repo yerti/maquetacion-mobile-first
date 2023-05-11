@@ -10,6 +10,7 @@
     --warm-black: #201E1C;
     --warm-blac-01:  #282623;
     --grey: #BABABA;
+    --lead:  #808080;
     --off-white:  #FAF8F7;
     --just-white:  #FFFFFF;
 }
@@ -141,6 +142,7 @@ main {
  .main-currency-table .currency-table--title {
     margin-top: 48px;
     margin-bottom: 12px;
+    margin-right: 72px;
     font-family: var(--dm-sans);
     font-size: 1.8rem;
     font-weight: bold;
@@ -152,11 +154,24 @@ main {
     min-width: 230px;
     max-width: 300px;
     height: 250px;
-    margin: 0 auto;
+    margin: -35px auto;
 }
 .currency-table--container table {
     width: 100%;
     height: 100%;
+}
+.currency-table--container .next {
+    width: 18px;
+    height: 40px;
+    display: inline-block;
+    position: relative;
+    top: 147px;
+    left: 134px;
+    background-image: url(./assets/icons/mdi_keyboard_arrow_down.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
 }
 .currency-table--container td {
     width: 50%;
@@ -208,7 +223,7 @@ main {
     width: 115px;
     height: 30px;
     margin: 0 auto;
-    margin-top: 16px;
+    margin-top: 90px;
     padding: 8px;
     background-color: var(--soft-orange);
     border-radius: 8px;
@@ -224,6 +239,7 @@ main {
 .main-commissions-table .commissions-table--title {
     margin-top: 48px;
     margin-bottom: 12px;
+    margin-right: 72px;
     font-family: var(--dm-sans);
     font-size: 1.8rem;
     font-weight: bold;
@@ -235,11 +251,24 @@ main {
     min-width: 230px;
     max-width: 300px;
     height: 250px;
-    margin: 0 auto;
+    margin: -35px auto;
 }
 .commissions-table--container table {
     width: 100%;
     height: 100%;
+}
+.commissions-table--container .back {
+    width: 18px;
+    height: 40px;
+    display: inline-block;
+    position: relative;
+    top: 147px;
+    left: -134px;
+    background-image: url(./assets/icons/mdi_keyboard_arrow_down.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: scaleX(-1);
 }
 .commissions-table--container td {
     width: 50%;
@@ -265,8 +294,88 @@ main {
     width: 115px;
     height: 30px;
     margin: 0 auto;
-    margin-top: 16px;
+    margin-top: 90px;
     padding: 8px;
     background-color: var(--soft-blue);
     border-radius: 8px;
+}
+.main-product-detail {
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    padding: 20px 10px;
+    background-color: var(--warm-black);
+}
+.imagen-isotipo {
+    position: absolute;
+    width: 40px;
+    height: 25px;
+    left: calc(50% - 20px);
+    top: -10px;
+    background-image: url(./assets/pics/isotipo.svg);
+}
+.product-detail--title {
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 64px;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    gap: 24px;
+    text-align: center;
+}
+.product-detail--title h2 {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 26px;
+    color: var(--just-white);
+}
+.product-detail--title p {
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--lead);
+}
+
+.product-detail--card {
+    width: 90%%;
+    min-width: 288px;
+    max-width: 400px;
+    height: 150px;
+    margin: 15px auto;
+    background-color: var(--warm-blac-01);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+    border-radius: 4px;
+}
+.isotipo {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 12px;
+    margin-left: 16px ;
+    margin-top: 16px;
+}
+.product--card-title {
+    width: auto;
+    height: 18px;
+    margin-left: 16px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+    color: var(--just-white);
+}
+.product--card-body {
+    width: 252px;
+    height: 54px;
+    margin-left: 16px;
+    margin-bottom: 22px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--lead);
+    
 }
