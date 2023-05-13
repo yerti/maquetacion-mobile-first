@@ -132,6 +132,16 @@ main {
     line-height: 1.8rem;
     color: var(--grey);
 }
+.main-tables-container {
+    display: flex;
+    height: 440px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    margin: 0 10px 0;
+    padding: 0 20px;
+    margin-left: 30px;
+}
 .main-currency-table {
     width: 70%;
     min-width: 235px;
@@ -142,7 +152,7 @@ main {
 }
  .main-currency-table .currency-table--title {
     margin-top: 48px;
-    margin-bottom: 12px;
+    margin-bottom: 45px;
     margin-right: 72px;
     font-family: var(--dm-sans);
     font-size: 1.8rem;
@@ -160,19 +170,6 @@ main {
 .currency-table--container table {
     width: 100%;
     height: 100%;
-}
-.currency-table--container .next {
-    width: 18px;
-    height: 40px;
-    display: inline-block;
-    position: relative;
-    top: 147px;
-    left: 134px;
-    background-image: url("./assets/icons/mdi_keyboard_arrow_down.svg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    
 }
 .currency-table--container td {
     width: 50%;
@@ -239,7 +236,7 @@ main {
 }
 .main-commissions-table .commissions-table--title {
     margin-top: 48px;
-    margin-bottom: 12px;
+    margin-bottom: 45px;
     margin-right: 72px;
     font-family: var(--dm-sans);
     font-size: 1.8rem;
@@ -257,19 +254,6 @@ main {
 .commissions-table--container table {
     width: 100%;
     height: 100%;
-}
-.commissions-table--container .back {
-    width: 18px;
-    height: 40px;
-    display: inline-block;
-    position: relative;
-    top: 147px;
-    left: -134px;
-    background-image: url("./assets/icons/mdi_keyboard_arrow_down.svg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    transform: scaleX(-1);
 }
 .commissions-table--container td {
     width: 50%;
